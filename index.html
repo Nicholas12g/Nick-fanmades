@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Fanmades</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(to right, #001f3f, #0074D9);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00ccff;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #001f3f;
+      padding: 1rem;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ccff;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .like-button {
+      background-color: #0074D9;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .comments {
+      margin-top: 1rem;
+    }
+    .comments textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      resize: vertical;
+    }
+    .comments button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #00ccff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #001f3f;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nick Fanmades</h1>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#capitulos">Capítulos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bem-vindo ao Nick Fanmades!</h2>
+      <p>Este é o seu portal exclusivo para o mangá <strong>Dragon Ball Z: Dim Rise</strong>. Confira os capítulos, artes e muito mais!</p>
+    </section>
+
+    <section id="capitulos">
+      <h2>Capítulos do Mangá</h2>
+
+      <h3>Capítulo 1 – “Eco do Passado”</h3>
+      <p>[Inclui todas as cenas com Nappa, Raditz e o renascimento dos Saiyajins]</p>
+      <button class="like-button" onclick="alert('Você curtiu este capítulo!')">Curtir 👍</button>
+      <div class="comments">
+        <textarea rows="4" placeholder="Comente sobre o Capítulo 1..."></textarea><br>
+        <button onclick="alert('Comentário enviado!')">Enviar</button>
+      </div>
+
+      <h3>Capítulo 2 – “Treinamento nas Sombras”</h3>
+      <p>[Raditz treina em Vampa, avança até o Super Saiyajin 2, Goku e Vegeta sentem sua energia]</p>
+      <button class="like-button" onclick="alert('Você curtiu este capítulo!')">Curtir 👍</button>
+      <div class="comments">
+        <textarea rows="4" placeholder="Comente sobre o Capítulo 2..."></textarea><br>
+        <button onclick="alert('Comentário enviado!')">Enviar</button>
+      </div>
+
+      <h3>Capítulo 3 – “O Uivo da Raça”</h3>
+      <p>[Raditz desperta o Super Saiyajin 3 e atrai a atenção de Black Freeza]</p>
+      <button class="like-button" onclick="alert('Você curtiu este capítulo!')">Curtir 👍</button>
+      <div class="comments">
+        <textarea rows="4" placeholder="Comente sobre o Capítulo 3..."></textarea><br>
+        <button onclick="alert('Comentário enviado!')">Enviar</button>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Imagens</h2>
+      <p>Explore artes exclusivas criadas por você.</p>
+    </section>
+
+    <section id="videos">
+      <h2>Aberturas / Vídeos</h2>
+      <p>Assista às aberturas dos volumes e animações dos fanmades.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Dragon Ball Z: Dim Rise é um mangá fanmade criado por Nicholas Gabriel. Uma nova jornada no universo de Dragon Ball, com novos personagens, formas e batalhas lendárias.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nick Fanmades. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
